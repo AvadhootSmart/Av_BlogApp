@@ -19,11 +19,11 @@ def User(request):
         Title = request.POST.get('Title')
         Content = request.POST.get('Content')
 
-        # Check if Title and Content are not empty
+        
         if Title and Content:
             BlogContent.objects.create(Title=Title, Content=Content)
-            return redirect('/')  # Redirect to a success page
+            return redirect('/')  
         else:
-            # Handle validation errors or inform the user that fields are required.
-            return redirect('/admin/')
+            
+            return redirect('/')
     return render(request, "User.html")
