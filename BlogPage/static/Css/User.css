@@ -33,10 +33,6 @@ body {
   border-radius: 100px;
 }
 
-
-.container form input::content{
-  color: red;
-}
 .input {
   background-color: #212121;
   width: 20vw;
@@ -117,4 +113,10 @@ body {
 .bookmarkBtn:active {
   transform: scale(0.95);
   transition-duration: .3s;
+}
+
+@media only screen and (max-width: 767px) {
+  .container form input{
+    width:100% ;
+  }
 }

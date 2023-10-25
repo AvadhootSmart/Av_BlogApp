@@ -129,9 +129,9 @@ body {
 .Create{
     font-size:1.5rem;
     margin-top: 10%;
-    border-radius: 100px;
-    width: 10vw;
-    height: 3vw;
+    border-radius: 10%;
+    width: 30%;
+    height: 15%;
     background-color: transparent;
     border: black 3px solid;
     transition: scale 0.2s ease;
