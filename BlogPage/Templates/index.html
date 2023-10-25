@@ -1,0 +1,49 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Template 3</title>
+    <link rel="stylesheet" type="text/css" href="{% static "Css/style.css"%}">
+    <link rel="stylesheet" type="text/css" href="{% static "Css/responsive.css"%}">
+  </head>
+
+  <body>
+    <div class="header">
+      <h2>Title</h2>
+    </div>
+    <div class="main">
+      <div class="left">
+          {% for Blog in Blogs%}
+          <h3>{{Blog.Title}}</h3>
+          <p>{{Blog.Content|truncatechars:200}}...</p>
+
+          <a href="ContentBlog/{{Blog.id}}">Read more</a>
+
+          {% endfor %}
+      </div>
+      <div class="right">
+        <div id="about">
+          <h2>About me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit enim
+            nam voluptatibus perferendis explicabo mollitia possimus cupiditate,
+            pariatur dicta odio harum error vitae voluptas ab sint consequuntur.
+            Suscipit numquam aliquam, aliquid accusamus perferendis aspernatur.
+            In earum ducimus, unde, aperiam, soluta velit optio qui nam
+            distinctio iste cumque repudiandae eveniet nihil?
+          </p>
+        </div>
+        <div id="recent">
+          <h2>Recent Posts</h2>
+          <ul>  
+            {% for i in Blogs %}
+            <a href="ContentBlog/{{i.id}}">{{i.Title}}</a>
+            {% endfor %}
+          </ul>
+        </div>
+        <button class="Create"><a href="User/" >Create Blog</a></button>
+      </div>
+    </div>
+  </body>
+</html>

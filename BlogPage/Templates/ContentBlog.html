@@ -1,0 +1,26 @@
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="{% static "Css/BlogPage.css"%}">
+  <link rel="stylesheet" type="text/css" href="{% static "Css/responsive.css"%}">
+  <title>Title</title>
+</head>
+
+<body>
+  {%for Post in BlogPost %}
+  <div class="header">
+    <h2>{{Post.Title}}</h2>
+  </div>
+  <div class="container">
+    <div class="text">
+      <p>{{Post.Content}}</p>
+    </div>
+  </div>
+  {% endfor %}
+  <a href="/" class="links">Go Back</a>
+</body>
+
+</html>
