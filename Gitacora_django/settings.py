@@ -57,7 +57,7 @@ ROOT_URLCONF = 'Gitacora_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "Templates")],#AddedManually
+        'DIRS': [os.path.join(BASE_DIR,'BlogPage','templates')],#AddedManually
         'APP_DIRS':True,
         'OPTIONS': {
             'context_processors': [
@@ -132,4 +132,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = os.path.join(BASE_DIR,'BlogPage','static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
 
-DEBUG = True
+DEBUG = False
