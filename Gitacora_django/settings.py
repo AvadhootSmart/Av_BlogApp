@@ -57,7 +57,8 @@ ROOT_URLCONF = 'Gitacora_django.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'BlogPage','templates')],#AddedManually
+        # 'DIRS': [os.path.join(BASE_DIR,'BlogPage','templates')],#AddedManually
+        'DIRS':[],
         'APP_DIRS':True,
         'OPTIONS': {
             'context_processors': [
