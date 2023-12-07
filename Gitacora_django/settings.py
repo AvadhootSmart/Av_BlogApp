@@ -81,9 +81,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'C62G*Cbe*-5b4BG6ebFeB3ED2bAbcbA*',
-        'HOST': 'roundhouse.proxy.rlwy.net',
-        'PORT': '30296',
+        'PASSWORD': 'dgCdaD6Bg5GEc6344*A2f4fB31C4ee2A',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT': '29089',
     }
 }
 
@@ -132,4 +132,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = os.path.join(BASE_DIR,'BlogPage','static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
 
-DEBUG = False
+DEBUG = True
