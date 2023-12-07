@@ -133,4 +133,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = os.path.join(BASE_DIR,'BlogPage','static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
 
-DEBUG = False
+DEBUG = True
